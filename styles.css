@@ -1,7 +1,15 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+main {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
 .nav {
   width: 550;
-  height: 90;
-  background: #f2f2f2;
+  height: 60px;
+  background: #ffffff;
   margin: 0px;
   display: flex;
   justify-content: space-between;
@@ -11,15 +19,79 @@
 section {
   display: flex;
   width: 100%;
-  height: 70vh; /* Adjust height as needed */
+  height: 80vh; /* Adjust height as needed */
   margin-top: 20px;
 }
-
+#color-picker {
+  width: 50px;
+  height: 50px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 .color-bar {
   flex: 1; /* Each bar takes equal space */
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: end;
+  color: white;
+}
+#mode-select {
+  display: flex;
+  padding: 10px 2.5rem 10px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-300, #d5d7da);
+  background: var(--Base-White, #fff) url("icons/Buttons/chevron-down.svg")
+    no-repeat right 1rem center;
+  background-size: 1rem;
+
+  box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset,
+    0px -2px 0px 0px rgba(10, 13, 18, 0.05) inset,
+    0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: var(--Gray-700, #414651);
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  cursor: pointer;
+}
+
+#button {
+  border-radius: 8px;
+  border: 2px solid
+    var(--Gradient-skeuemorphic-gradient-border, rgba(0, 0, 0, 0.12));
+  background: var(--Brand-600, #7f56d9);
+
+  /* Shadows/shadow-xs-skeuomorphic */
+
+  display: flex;
+  padding: 10px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  color: var(--Base-White, #fff);
+
+  /* Text sm/Semibold */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  transition-duration: 0.5s;
+}
+#button:hover {
+  background-color: #462e79; /* Green */
   color: white;
 }
